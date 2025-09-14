@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator BMI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Kalkulator BMI</h1>
+    <p>Masukkan data anda</p>
+    <div class="input-group">
+      <label for="weight">Berat Badan (kg):</label>
+      <input type="number" id="weight" placeholder="contoh: 70">
+    </div>
+    <div class="input-group">
+      <label for="height">Tinggi Badan (cm):</label>
+      <input type="number" id="height" placeholder="contoh: 170">
+    </div>
+
+    <button onclick="calculateBMI()">Hitung BMI</button>
+
+    <div class="result">
+      <h2>Hasil</h2>
+      <p><strong>BMI:</strong> <span id="bmiValue">-</span></p>
+      <p><strong>Kategori:</strong> <span id="bmikategori">-</span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
